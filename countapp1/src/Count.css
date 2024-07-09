@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: black;
+    place-items: center;
+    justify-content: center;
+}
+
+.counting{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+button{
+    margin-bottom: 30px;
+}
