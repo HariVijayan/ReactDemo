@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Employee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #view{
+            margin: 0 auto;
+            width: 65%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+    border-radius: 4px;
+    border: none;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <script src="./add.js"></script>
+</head>
+<body>
+    <h1>Add Employee</h1>
+    <div style="text-align: center;"id="view">
+        Employee Name: <input type="text" name="" id="empName" required><br><br>
+        Employee ID: <input type="text" name="" id="empId" required><br><br>
+        Employee Dept: <input type="text" name="" id="dept" required><br><br>
+        Employee Salary: <input type="number" name="" id="salary" required><br><br>
+        Employement:
+        <select name="" id="type">
+            <option value="full">Full Time</option>
+            <option value="part">Part Time</option>
+            <option value="contract">Contract</option>
+        </select><br><br>
+        Working hours: <input type="number" disabled name="" id="part" required><br><br>
+        Contract Time: <input type="number" disabled name="" id="contract" required><br><br>
+        <input type="button" value="Add Employee" onclick="addEmployee()"><br><br>
+        <script>
+            const options = document.getElementById('type');
+            options.addEventListener('change', () => {
+                if (options.value === 'part') {
+                    document.getElementById("part").disabled = false;
+                    document.getElementById("contract").disabled = true;
+                } else if (options.value === 'contract') {
+                    document.getElementById("part").disabled = true;
+                    document.getElementById("contract").disabled = false;
+                } else {
+                    document.getElementById("part").disabled = true;
+                    document.getElementById("contract").disabled = true;
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

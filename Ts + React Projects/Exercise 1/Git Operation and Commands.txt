@@ -1,0 +1,49 @@
+DOWNLOADING GIT :
+-----------------
+
+Download Git for free from the website: https://www.git-scm.com
+
+COMMANDS :
+----------
+
+1)Check Git Version ->> git --version
+
+2)Set Username ->> git config --global user.name "Hari Prasad"
+
+3)Set Email ->> git config --global user.email "hari123@gmail.com"
+
+4)Initialize git on a folder ->> git init
+
+5)Add reference to GitHub or other online repositories ->> git remote add origin URL_OF_THE_REMOTE_REPOSITORY
+
+6)For GitHub Add Branch Main ->> git branch -M main
+
+7)Add files to staging environment in local repository ->> git add filename.extension
+
+8)Add all the files to the staging environment in local repository ->> git add --all
+
+9)Commit files in Staging Environment ->> git commit -m "Message"
+
+10)Push files to Remote repository ->> git push origin
+
+11)Pull files from Remote Repository ->> git pull origin
+
+12)Check Status ->> git status
+
+13)Check Status in more simpler way ->> git status --short
+
+14)Check history of changes made to repository ->> git log
+
+15)Get help for specific command ->> git command_name -help
+
+16)Get help for all commands ->> git help --all
+
+17)Create new branch ->> git branch new_branch_name
+
+18)Check all available branches ->> git branch
+
+19)Shift to another available branch ->> git checkout new_branch_name
+
+20)Merge another branch into current accessing branch ->> git merge branch_name_which_needs_to_be_merged
+
+21)Track changes between local and Remote Repository ->> git fetch origin

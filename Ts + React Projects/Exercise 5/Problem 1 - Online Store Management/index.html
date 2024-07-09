@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Place A New Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 65%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .order {
+            margin-bottom: 10px;
+            display: inline;
+        }
+
+        label {
+            display: inline-block;
+            text-align: right;
+            margin-bottom: 30px;
+            margin-left: 10px;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+       #submit {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #add{
+            display: block;
+        }
+        button[type="button"] {
+            background-color: #008CBA;
+            color: white;
+            margin-left: 30em;
+            margin-top: 3em;
+        }
+
+        #display {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .order2{
+            margin-left: 25em;
+            margin-top: 2em;
+        }
+
+        #b1{
+            margin-left: 0em;
+            display: inline;
+        }
+
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Place A New Order</h1>
+    <form action="">
+        <div class="order">
+            <label for="UserName">Name:</label>
+            <input type="text" id="UserName">
+        </div>
+        <div class="order">
+            <label for="OrderNo">Order No:</label>
+            <input type="text" id="OrderNo">
+        </div>
+        <div id="items" class="order">
+            <label for="">Item:</label>
+            <input type="text" class="items" id="">
+            <label for="">Cost:</label>
+            <input type="number" class="cost" id="">
+        </div>
+        <button type="button" id="add"onclick="addMore()">Add more</button>
+        <div class="order2">
+            <label for="addr">Address:</label><br>
+            <textarea name="addr" id="addr" cols="30" rows="10"></textarea>
+        </div>
+        <button type="button" id="submit" onclick="placeOrder()">Place Order</button>
+        <button type="button" id="b1"onclick="ToUpdate()">Update Order</button>
+    <button type="button" id="b1"onclick="ToInvoice()">Invoice</button>
+    </form>
+    <div id="display"></div>
+</body>
+</html>

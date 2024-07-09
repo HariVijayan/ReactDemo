@@ -1,0 +1,48 @@
+.project{
+    float: left;
+    text-align: center;
+    width: 65%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 14em;
+    padding-bottom: 5em;
+}
+
+.qrcode-generator{
+    float: left;
+    width: 50%;
+}
+
+.qrcode{
+    float: left;
+    width: 50%;
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+
+#qrinput{
+    background-color: transparent;
+    border: 3px solid black;
+    outline: none;
+    height: 5em;
+    width: 17em;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+::placeholder{
+    color: black;
+    text-align: center;
+}
+
+#savebutton{
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 3em;
+}

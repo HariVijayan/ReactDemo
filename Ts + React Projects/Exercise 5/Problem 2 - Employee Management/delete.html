@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delete Employee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        input[type="text"],
+        select {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #view{
+            margin: 0 auto;
+            width: 65%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+    border-radius: 4px;
+    border: none;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <script src="./delete.js"></script>
+</head>
+<body>
+    <h1>Delete Employee</h1>
+    <div style="text-align: center;" id="view">
+        Employee ID to be Deleted: <input type="text" id="empId"><br><br>
+        Employee Type:
+        <select name="" id="type">
+            <option value="full">Full Time</option>
+            <option value="part">Part Time</option>
+            <option value="contract">Contract</option>
+        </select><br><br>
+        <input type="button" value="Delete Employee" onclick="deleteEmployee()"><br><br>
+    </div>
+</body>
+</html>

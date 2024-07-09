@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        input[type="text"],
+        textarea {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="button"]:first-of-type {
+            margin-left: 30em;
+        }
+        h1{
+            margin-top: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        #view{
+            margin: 0 auto;
+            width: 65%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="button"] {
+            background-color: #008CBA;
+    color: white;
+    margin-top: 3em;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+        }
+
+        #upd{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+    border-radius: 4px;
+    border: none;
+        }
+    </style>
+    <script src="./update.js"></script>
+</head>
+<body>
+    <h1>Update Order</h1>
+    <div style="text-align: center;" id="view">
+        Order No: <input type="text" name="" id="OrderNo"><br><br>
+        Address: <br><textarea name="" id="addr" cols="30" rows="10"></textarea><br><br>
+        <input type="button" value="Update Order" id="upd"onclick="update()"><br><br>
+        <input type="button" value="Place Order" onclick="ToPlaceOrder()">
+        <input type="button" value="Invoice" onclick="ToInvoice()">
+    </div>
+</body>
+</html>

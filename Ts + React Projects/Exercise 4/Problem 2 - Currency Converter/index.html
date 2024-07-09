@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 5em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 3em;
+        }
+
+        #menu {
+            margin-bottom: 20px;
+            padding-left: 20em;
+        }
+
+        #menu p {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        .query {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .currency {
+            width: 100px;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        #results {
+            width: 100px;
+            padding: 5px;
+        }
+        #submit{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <div class="container">
+        <div class="query">
+            <form>
+                <div class="form-group">
+                    <label for="amount">Enter The Amount:</label>
+                    <input type="number" id="amount" name="amount" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="source">Currency:</label>
+                    <select id="source" name="source" class="currency">
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="target">Target Currency:</label>
+                    <select id="target" name="target" class="currency">
+
+                    </select>
+                </div>
+
+                <input type="button" id="submit" value="Submit">
+            </form>
+            <br>
+            <br>
+
+            <div id="result">
+                <label for="target">Result:</label>
+                <input type="text" id="results">
+            </div>
+        </div>
+    </div>
+
+    <script src="convertor.js"></script>
+</body>
+</html>

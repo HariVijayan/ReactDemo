@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion App</title>
+    <script src="conversion.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: cornflowerblue;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#menu {
+    margin-bottom: 20px;
+    padding-left: 17em;
+}
+
+#menu p {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversion App</h1>
+        <div id="menu">
+            <p onclick="temperatureConversion()">1. Temperature Conversion</p>
+            <p onclick="distanceConversion()">2. Distance Conversion</p>
+            <p onclick="currencyConversion()">3. Currency Conversion</p>
+        </div>
+        <div id="output"></div>
+    </div>
+</body>
+</html>
