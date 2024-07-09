@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './List.css';
 
 const List = () => {
     const [todos, setTodos] = useState<string[]>([]);
@@ -34,14 +35,14 @@ const List = () => {
                     onChange={handleInputChange}
                     placeholder="Enter your todo"
                 />
-                <br /><br />
-                <button type="submit">Add Todo</button>
+                &nbsp;&nbsp;&nbsp;
+                <button type="submit" id="tdlbtn">Add Todo</button>
             </form>
             <ul>
                 {todos.map((todo, index) => (
                     <h2 key={index}>
                         {todo}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button onClick={() => handleDeleteTodo(index)}>Delete</button>
+                        <button onClick={() => handleDeleteTodo(index)} id="tdlbtn">Delete</button>
                     </h2>
                 ))}
             </ul>
